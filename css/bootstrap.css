@@ -1214,7 +1214,7 @@ h6 .small,
 .h6 .small {
   font-weight: normal;
   line-height: 1;
-  color: #777;
+  color: #001b2c;
 }
 h1,
 .h1,
@@ -2554,7 +2554,7 @@ output {
   font-size: 14px;
   line-height: 1.42857143;
   color: #555;
-  background-color: #fff;
+  background-color: #e8f1f5;
   background-image: none;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -5025,7 +5025,7 @@ a.thumbnail.active {
   color: #333;
 }
 .alert {
-  padding: 15px;
+  padding: 43px;
   margin-bottom: 20px;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -5078,12 +5078,12 @@ a.thumbnail.active {
   color: #245269;
 }
 .alert-warning {
-  color: #8a6d3b;
-  background-color: #fcf8e3;
-  border-color: #faebcc;
+  color: #0c74a6;
+  background-color: #b9deef;
+  border-color: #001b2c;
 }
 .alert-warning hr {
-  border-top-color: #f7e1b5;
+  border-top-color: #001b2c;
 }
 .alert-warning .alert-link {
   color: #66512c;
