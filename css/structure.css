@@ -63,8 +63,8 @@ h2{font-family:'Varela',sans-serif}
 .single_sarticle_inner{background-color:#eff6f9; display:inline; float:left; margin:-60px 20px 0; padding:10px 20px; width:auto;  box-shadow: 0 0 2px 0px rgba(14, 2, 2, 0.62);}
 .stuff_category{color:#444; display:inline-block; font-size:10px; outline:medium none; text-decoration:none; text-transform:uppercase}
 .stuff_article_inner{float:left; display:inline; width:100%}
-.stuff_date{background-color:#0c74a6; border-radius:3px; color:#fff; float:left; font-size:14px; margin:10px 15px 0 0; padding:5px 8px; text-align:center; width:56px;}
-.stuff_date strong{font-size:20px}
+.stuff_date{background-color:#f9f125; border-radius:3px; color:#4e4b4b; float:left; font-size:15px; margin:10px 15px 0 0; padding:5px 8px; text-align:center; width:56px;}
+.stuff_date strong{font-size:30px}
 .stuff_article_inner h2{font-size:24px; line-height:1.5em; margin:0; padding:5px 0 0}
 .stuff_article_inner h2 > a{color:#444}
 .stuff_article_inner p{line-height:1.5em; padding:10px 0}
