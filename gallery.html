@@ -47,24 +47,98 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
-
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
    <style type="text/css">
-      
-.img-circular img{
- width: 200px;
- height: 200px;
- background-size: cover;
- display: block;
- border-radius: 100px;
- -webkit-border-radius: 100px;
- -moz-border-radius: 100px;
-   float: left;
-}
+.container.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 100vh;
+    padding: 30px 50px;
 }
 
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 25px auto;
+    font-size: 18px;
+    color: #999;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+/* Override bootstrap column paddings */
+.tz-gallery .row > div {
+    padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+}
+
+.tz-gallery .lightbox:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Glyphicons Halflings';
+    content: '\e003';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(46, 132, 206, 0.7);
+    content: '';
+    transition: 0.4s;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+.lightbox img{
+   max-width: 800px;
+   max-height: 600px;
+}
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+}
    </style>
    </head>
    <body>
+
+   
       <!-- menu start -->
             <nav id="menu-1" class="mega-menu">
          <section class="menu-list-items">
@@ -116,158 +190,59 @@
             </div>
          </div>
       </section>
-    
-<section class="testimoniial-section light-blue" >
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12 col-sm-12 col-xs-12 heading">
-                  <div class="main-heading-container">
-                     <h1 style="font-size: 50px;"><b>TESTIMONIALS</b></h1>
-                     <p>See what our beloved clients say. </p>
-                  </div> <br><div class="contentPadding">
-         <div class="container">
-            <div class="row">
-               <div class="col-xs-12"> <br><br>
-                  <!--  Block1-START   -->
-                  <div class="testimonialsBlock">
-                     <div class="img-circular">
-                        <img src="images/users/1.jpg">
-                     </div>
-                     <div class="col-md-8 col-sm-12 col-xs-12">
-                     <div class="personeInfo large">
-                        <span style="font-size: 25px;"><b>Psychology Care Clinic is great</b></span>
-                        <p>Michale John (Accountant)</p>
-                        <div class="personeStars" style="color: #f3e328;">
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                        </div>
-                     </div>
-                     <div class="emptySpace40 emptySpace-xs30"></div>
-                     <div class="simple-article normall">
-                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia non qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia numquam eius modi. Neque porro quisquam est. Neque porro quisquam est, quia non qui dolorem ipsum quia dolor qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia non qui dolorem.</p>
-                     </div>
-                     <br><hr><br>
-                     </div>
-                  </div>
-                  <!--  Block1-END  -->
+      <div class="container gallery-container">
 
-                  <!--  Block2-START   -->
-                  <div class="testimonialsBlock">
-                     <div class="img-circular">
-                        <img src="images/users/2.jpg">
-                     </div>
-                     <div class="col-md-8 col-sm-12 col-xs-12">
-                     <div class="personeInfo large">
-                        <span style="font-size: 25px;"><b>Psychology Care Clinic is great</b></span>
-                        <p>Michale John (Accountant)</p>
-                        <div class="personeStars" style="color: #f3e328;">
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                        </div>
-                     </div>
-                     <div class="emptySpace40 emptySpace-xs30"></div>
-                     <div class="simple-article normall">
-                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia non qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia numquam eius modi. Neque porro quisquam est. Neque porro quisquam est, quia non qui dolorem ipsum quia dolor qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia non qui dolorem.</p>
-                     </div>
-                     <br><hr><br>
-                     </div>
-                  </div>
-                  <!--  Block2-END  -->
-                  
-                  <!--  Block3-START   -->
-                  
-                  <div class="testimonialsBlock">
-                     <div class="img-circular">
-                        <img src="images/users/3.jpg">
-                     </div>
-                     <div class="col-md-8 col-sm-12 col-xs-12">
-                     <div class="personeInfo large">
-                        <span style="font-size: 25px;"><b>Psychology Care Clinic is great</b></span>
-                        <p>Michale John (Accountant)</p>
-                        <div class="personeStars" style="color: #f3e328;">
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                        </div>
-                     </div>
-                     <div class="emptySpace40 emptySpace-xs30"></div>
-                     <div class="simple-article normall">
-                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia non qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia numquam eius modi. Neque porro quisquam est. Neque porro quisquam est, quia non qui dolorem ipsum quia dolor qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia non qui dolorem.</p>
-                     </div>
-                     <br><hr><br>
-                     </div>
-                  </div>
-                  <!--  Block3-END  -->
-                  
-                  <!--  Block4-START   -->
-                  
-                  <div class="testimonialsBlock">
-                     <div class="img-circular">
-                        <img src="images/users/1.jpg">
-                     </div>
-                     <div class="col-md-8 col-sm-12 col-xs-12">
-                     <div class="personeInfo large">
-                        <span style="font-size: 25px;"><b>Psychology Care Clinic is great</b></span>
-                        <p>Michale John (Accountant)</p>
-                        <div class="personeStars" style="color: #f3e328;">
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                        </div>
-                     </div>
-                     <div class="emptySpace40 emptySpace-xs30"></div>
-                     <div class="simple-article normall">
-                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia non qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia numquam eius modi. Neque porro quisquam est. Neque porro quisquam est, quia non qui dolorem ipsum quia dolor qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia non qui dolorem.</p>
-                     </div>
-                     <br><hr><br>
-                     </div>
-                  </div>
-                  <!--  Block4-END  -->
-                  
-                  <!--  Block5-START   -->
-                  
-                  <div class="testimonialsBlock">
-                     <div class="img-circular">
-                        <img src="images/users/2.jpg">
-                     </div>
-                     <div class="col-md-8 col-sm-12 col-xs-12">
-                     <div class="personeInfo large">
-                        <span style="font-size: 25px;"><b>Psychology Care Clinic is great</b></span>
-                        <p>Michale John (Accountant)</p>
-                        <div class="personeStars" style="color: #f3e328;">
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                           <i class="fa fa-star"></i>
-                        </div>
-                     </div>
-                     <div class="emptySpace40 emptySpace-xs30"></div>
-                     <div class="simple-article normall">
-                        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia non qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia numquam eius modi. Neque porro quisquam est. Neque porro quisquam est, quia non qui dolorem ipsum quia dolor qui dolorem ipsum quia dolor sit amet, consectetur, adipis civelit sed quia non qui dolorem.</p>
-                     </div>
-                     </div>
-                  </div>
-                  <!--  Block5-END  -->
-               </div>
+    <h1>Gallery</h1>
+
+    <p class="page-description text-center">Fluid Layout With Overlay Effect</p>
+    
+    <div class="tz-gallery">
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/bridge.jpg">
+                    <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/bridge.jpg" alt="Bridge">
+                </a>
             </div>
-         </div>
-      </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/park.jpg">
+                    <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/park.jpg" alt="Park">
+                </a>
             </div>
-               </div>
-         </div>
-      </section>
-      
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/tunnel.jpg">
+                    <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/tunnel.jpg" alt="Tunnel">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-8">
+                <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/traffic.jpg">
+                    <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/traffic.jpg" alt="Traffic">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/rails.jpg">
+                    <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/rails.jpg" alt="Coast">
+                </a>
+            </div> 
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/coast.jpg">
+                    <img src="https://raw.githubusercontent.com/LeshikJanz/libraries/master/Related%20images/Bootstrap%20example/coast.jpg" alt="Rails">
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+
+
       <footer class="footer">
          <div class="container">
             <div class="row">
